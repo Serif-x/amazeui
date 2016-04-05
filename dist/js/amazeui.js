@@ -1,4 +1,4 @@
-/*! Amaze UI v2.5.2 | by Amaze UI Team | (c) 2016 AllMobilize, Inc. | Licensed under MIT | 2016-01-26T11:06:52+0800 */ 
+/*! Amaze UI v2.5.2 | by Amaze UI Team | (c) 2016 AllMobilize, Inc. | Licensed under MIT | 2016-04-05T14:27:12+0800 */ 
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("jquery"));
@@ -14311,7 +14311,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	UCheck.prototype.uncheck = function() {
 	  this.$element
 	    .prop('checked', false)
-	    .trigger('change.ucheck.amui')
+	    // trigger `change` event for form validation, etc.
+	    // @see https://forum.jquery.com/topic/should-chk-prop-checked-true-trigger-change-event
+	    .trigger('change')
 	    .trigger('unchecked.ucheck.amui');
 	},
 

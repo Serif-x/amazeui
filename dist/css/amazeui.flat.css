@@ -1,4 +1,4 @@
-/*! Amaze UI v2.5.2 | by Amaze UI Team | (c) 2016 AllMobilize, Inc. | Licensed under MIT | 2016-01-26T11:06:52+0800 */
+/*! Amaze UI v2.5.2 | by Amaze UI Team | (c) 2016 AllMobilize, Inc. | Licensed under MIT | 2016-04-05T14:27:12+0800 */
 /* ==========================================================================
    Component: Base
  ============================================================================ */
@@ -14140,6 +14140,14 @@ tbody.am-collapse.am-in {
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   /* Control Nav */
+  /*.am-control-thumbs {
+    display: table;
+
+    li {
+      display: table-cell;
+      width: 1%;
+    }
+  }*/
 }
 .am-slider-d3 .am-viewport {
   max-height: 2000px;
